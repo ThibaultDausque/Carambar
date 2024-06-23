@@ -1,0 +1,18 @@
+doctype html 
+html 
+    head 
+        title Add Carambar 
+        link(rel='stylesheet',type='text/css', href='/add.css')
+    body 
+        
+        h1 Add a joke
+        a(href='/home') Return Home
+        div.formCarambar
+            form(method='POST' action='/jokeForm')
+                label(for='question') Question 
+                input#question(type='text', name='question')
+
+                label(for='answer') Answer 
+                input#answer(type='text', name='answer')
+
+                input#submit(type='submit', value='Submit')

@@ -1,0 +1,14 @@
+doctype html 
+html 
+    head 
+        title Carambar Jokes 
+        link(rel='stylesheet',type='text/css', href='/jokes.css')
+ 
+    body 
+        h1 Carambar Jokes
+        a(href='/home') Return Home
+
+        div.jokes
+            each joke in jokes 
+                h4= joke.question
+                p= joke.answer 
